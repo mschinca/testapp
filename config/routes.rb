@@ -1,4 +1,6 @@
 Testapp::Application.routes.draw do
+  resources :verbs
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
