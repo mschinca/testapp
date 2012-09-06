@@ -1,3 +1,19 @@
+# $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+require 'rvm/capistrano'
+require 'bundler/capistrano'
+
+set :rvm_ruby_string, 'ruby-1.9.2-p320'
+set :rvm_type, :user
+set :bundle_flags, "--deployment"
+
+set :default_environment, {
+    'PATH' => ENV['PATH'],
+    'RAILS_ENV' => ENV['RAILS_ENV']
+}
+
+#set :stages, %w(staging production)
+#require 'capistrano/ext/multistage'
+
 set :application, "testapp"
 set :repository,  "/home/skin/projects/futur3/testapp"
 

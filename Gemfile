@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'bundler'
 gem 'rails', '3.2.3'
 gem 'capistrano'
+gem 'rvm-capistrano'
+gem 'capistrano-ext'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
