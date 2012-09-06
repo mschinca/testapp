@@ -20,6 +20,7 @@ set :repository,  "/home/skin/projects/futur3/testapp"
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :applicationdir, '/var/www/testapp'
+default_run_options[:pty] = true
 
 role :web, "testapp.com"                          # Your HTTP server, Apache/etc
 role :app, "testapp.com"                          # This may be the same as your `Web` server
@@ -35,6 +36,9 @@ role :db,  "testapp.com"
 # deploy config
 set :deploy_to, applicationdir
 set :deploy_via, :export
+
+# don't use sudo
+set :use_sudo, false
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
