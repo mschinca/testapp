@@ -1,1 +1,5 @@
-rvm ruby-1.9.2-p320@testapp --create
+if [[ -s ".rvm/environments/ruby-1.9.2-p320@testapp" ]] ; then
+  . ".rvm/environments/ruby-1.9.2-p320@testapp"
+else
+  rvm --create use  "ruby-1.9.2-p320@testapp"
+fi

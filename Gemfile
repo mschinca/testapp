@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'bundler'
 gem 'rails', '3.2.3'
 gem 'capistrano'
 

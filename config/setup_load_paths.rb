@@ -11,4 +11,4 @@ end
 
 # If you're not using Bundler at all, remove lines bellow
 ENV['BUNDLE_GEMFILE'] = File.expand_path('../Gemfile', File.dirname(__FILE__))
-require 'bundler/setup
+require 'bundler/setup'
