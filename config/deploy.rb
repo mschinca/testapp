@@ -15,7 +15,7 @@ set :default_environment, {
 #require 'capistrano/ext/multistage'
 
 set :application, "testapp"
-set :repository,  "/home/skin/projects/futur3/testapp"
+set :repository,  "https://github.com/mschinca/testapp.git"
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
